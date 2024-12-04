@@ -1,0 +1,37 @@
+* {
+    font-family: Helvetica;
+    background-color: black;
+    color: white;
+}
+
+#introduction {
+    padding: 15%;
+}
+
+#other {
+    padding: 10%;
+}
+
+#contacts {
+    padding: 10%;
+}
+
+.box {
+    padding: 10%;
+}
+
+.title  {
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+
+.content {
+    width: 75%;
+    float: right;
+}
+
+.contact {
+    float: left;
+    width: 20%;
+}
