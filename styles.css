@@ -1,11 +1,22 @@
 * {
     font-family: Helvetica;
     background-color: black;
+    color: gray;
+}
+
+a { 
+    text-decoration: none;
+    font-weight: bold;
+    color: lightgray;
+}
+
+a:hover { 
     color: white;
 }
 
 #introduction {
     padding: 15%;
+    text-align: justify;
 }
 
 #other {
@@ -13,25 +24,59 @@
 }
 
 #contacts {
-    padding: 10%;
+    padding: 5%;
+}
+
+.skill{
+    float: left;
+    padding-right: 5%;
 }
 
 .box {
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
 .title  {
     width: 25%;
     float: left;
-    text-align: right;
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
 
 .content {
     width: 75%;
     float: right;
+    text-align: justify;
 }
 
 .contact {
+    padding-left: 10%;
     float: left;
-    width: 20%;
+}
+
+.jname {
+    float: left;
+    text-align: left;
+}
+
+.jdates{
+    float: right;
+    text-align: right;
+}
+
+.container {
+    zoom: 1; /* IE6&7 */
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
 }
