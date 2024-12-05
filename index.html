@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Bernardo Dias</title>
 </head>
 <body>
     <!--A brief description of myself-->
 
-    <div id="introduction">
-        <h1>Hello!</h1>
-        <h1>My name is Bernardo and I am a Software Engineer with a focus on Backend and ML!</h1>
-        <h1>If you want to get in touch with me send me an <a href="mailto:jbernardobvdias@gmail.com">email</a>!</h1>
+    <div class="container">
+        <div id="introduction">
+            <h1>Hello!</h1>
+            <h1>My name is Bernardo and I am a Software Engineer with a focus on Backend and ML!</h1>
+            <h1>If you want to get in touch with me send me an <a href="mailto:jbernardobvdias@gmail.com">email</a>!</h1>
+        </div>
     </div>
+        
 
     <!--Here is where the majority of the content goes-->
 
-    <div id="other">
+    <div class="container">
 
         <!--Background-->
 
-        <div class="box container">
-            <div class="title container">
-                <p>Background</p>
+        <div class="row mbox">
+            <div class="title col-sm-4">
+                <p class="title">Background</p>
             </div>
-            <div class="content container">
+            <div class="content col-sm-8">
                 <p>As a software developer and data scientist, I specialize in creating innovative solutions that combine the power of software engineering with artificial intelligence to address real-world challenges. With over 2 years of experience, I’ve contributed to diverse projects, including seamless web API integrations and optimizing deep learning models for computer vision.</p>
                 <p>Beyond my technical expertise, my international experiences have sharpened my adaptability and broadened my perspective, fueling my ability to collaborate effectively with teams from various cultural and professional backgrounds. I'm passionate about leveraging technology to make meaningful impacts while continuously expanding my knowledge in cutting-edge fields like AI and machine learning.</p>
             </div>
@@ -33,54 +38,54 @@
 
         <!--Experience-->
 
-        <div class="box container">
-            <div class="title float-child container">
-                <p>Experience</p>
+        <div class="row mbox">
+            <div class="title col-sm-4">
+                <p class="title">Experience</p>
             </div>
-            <div class="content container">
-                <div class="job container">
-                    <p class="jname">Software Developer - Connecting Software</p>
-                    <p class="jdates">Jan 2024 - Present</p>
+            <div class="content col-sm-8">
+                <div class="job row">
+                    <p class="jname col-sm">Software Developer - Connecting Software</p>
+                    <p class="jdates col-sm">Jan 2024 - Present</p>
                 </div>
-                <div class="job container">
-                    <p class="jname">Data Scientist - Tracer</p>
-                    <p class="jdates">Feb 2023 - Dec 2023</p>
+                <div class="job row">
+                    <p class="jname col-sm">Data Scientist - Tracer</p>
+                    <p class="jdates col-sm">Feb 2023 - Dec 2023</p>
                 </div>
-                <div class="job container">
-                    <p class="jname">Research Intern - University of Nottingham Malaysia</p>
-                    <p class="jdates">Aug 2021 - Jan 2022</p>
+                <div class="job row">
+                    <p class="jname col-sm">Research Intern - University of Nottingham Malaysia</p>
+                    <p class="jdates col-sm">Aug 2021 - Jan 2022</p>
                 </div>
-                <div class="job container">
-                    <p class="jname"><a href="assets/CV Bernardo Dias.pdf">See my resume...</a></p>
+                <div class="job row col-sm">
+                    <p class="jname col-sm"><a href="assets/CV Bernardo Dias.pdf">See my resume...</a></p>
                 </div>
             </div>
         </div>
 
         <!--Education-->
 
-        <div class="box container">
-            <div class="title float-child container">
-                <p>Education</p>
+        <div class="row mbox">
+            <div class="float-child col-sm-4">
+                <p class="title">Education</p>
             </div>
-            <div class="content container">
-                <div class="job container">
-                    <p class="jname container">(BE) Software Technology Engineering - VIA University College</p>
-                    <p class="jdates container">Aug 2019 - Jan 2023</p>
+            <div class="content col-sm-8">
+                <div class="job row">
+                    <p class="jname col-sm">(BE) Software Technology Engineering - VIA University College</p>
+                    <p class="jdates col-sm">Aug 2019 - Jan 2023</p>
                 </div>
-                <div class="job container">
-                    <p class="jname container">Exchange Semester - University of Malta</p>
-                    <p class="jdates container">Feb 2022 - Jan 2023</p>
+                <div class="job row">
+                    <p class="jname col-sm">Exchange Semester - University of Malta</p>
+                    <p class="jdates col-sm">Feb 2022 - Jan 2023</p>
                 </div>
             </div>
         </div>
 
         <!--Skills-->
 
-        <div class="box container">
-            <div class="title container">
-                <p>Skills</p>
+        <div class="row mbox">
+            <div class="title col-sm-4">
+                <p class="title">Skills</p>
             </div>
-            <div class="content container">
+            <div class="content col-sm-8">
                 <p class="skill">Python</p>
                 <p class="skill">C#</p>
                 <p class="skill">Java</p>
@@ -94,11 +99,12 @@
 
     <!--My contacts-->
 
-    <div id="contacts">
-        <p><a class="contact" href="mailto:jbernardobvdias@gmail.com">Email</a></p>
-        <p><a class="contact" href="https://www.linkedin.com/in/jbbvd/">LinkedIn</a></p>
-        <p><a class="contact" href="https://github.com/joaobagas">Github</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" style="text-align: center;"><p><a href="mailto:jbernardobvdias@gmail.com">Email</a></p></div>
+            <div class="col-sm-4" style="text-align: center;"><p><a href="https://www.linkedin.com/in/jbbvd/">LinkedIn</a></p></div>
+            <div class="col-sm-4" style="text-align: center;"><p><a href="https://github.com/joaobagas">Github</a></p></div>
+        </div>
     </div>
-
 </body>
 </html>

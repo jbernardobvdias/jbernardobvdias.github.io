@@ -4,6 +4,10 @@
     color: gray;
 }
 
+body {
+    background-color: black;
+}
+
 a { 
     text-decoration: none;
     font-weight: bold;
@@ -15,16 +19,11 @@ a:hover {
 }
 
 #introduction {
-    padding: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     text-align: justify;
-}
-
-#other {
-    padding: 10%;
-}
-
-#contacts {
-    padding: 5%;
 }
 
 .skill{
@@ -32,29 +31,20 @@ a:hover {
     padding-right: 5%;
 }
 
-.box {
+.mbox {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
 }
 
 .title  {
-    width: 25%;
-    float: left;
-    text-align: center;
-    font-weight: bold;
     color: white;
+    text-align: left;
+    font-weight: bold;
 }
 
 .content {
-    width: 75%;
-    float: right;
     text-align: justify;
-}
-
-.contact {
-    padding-left: 10%;
-    float: left;
 }
 
 .jname {
@@ -65,18 +55,4 @@ a:hover {
 .jdates{
     float: right;
     text-align: right;
-}
-
-.container {
-    zoom: 1; /* IE6&7 */
-}
-
-.container:before,
-.container:after {
-    content: "";
-    display: table;
-}
-
-.container:after {
-    clear: both;
 }
