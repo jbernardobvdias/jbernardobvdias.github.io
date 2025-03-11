@@ -1,0 +1,12 @@
+{
+    "jobs": [
+        {"title": "Sales Representative - Savoy Signature", "dates": "Nov 2024 - Present"},
+        {"title": "Software Developer - Connecting Software", "dates": "Jan 2024 - Oct 2024"},
+        {"title": "Data Scientist - Tracer", "dates": "Feb 2023 - Dec 2023"},
+        {"title": "Research Intern - University of Nottingham", "dates": "Aug 2021 - Jan 2022"}
+    ],
+    "studies": [
+        {"title": "(BE) Software Technology Engineering - VIA University College", "dates": "Aug 2019 - Jan 2023"},
+        {"title": "Exchange Semester - University of Malta", "dates": "Feb 2022 - Jan 2023"}
+    ]
+}
