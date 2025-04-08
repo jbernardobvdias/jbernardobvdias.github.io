@@ -1,3 +1,4 @@
+/* Default (Night) Mode */
 * {
     font-family: Helvetica;
     background-color: black;
@@ -6,6 +7,7 @@
 
 body {
     background-color: black;
+    color: gray;
 }
 
 a { 
@@ -26,7 +28,7 @@ a:hover {
     text-align: justify;
 }
 
-.skill{
+.skill {
     float: left;
     padding-right: 5%;
 }
@@ -37,7 +39,7 @@ a:hover {
     padding-bottom: 5%;
 }
 
-.title  {
+.title {
     color: white;
     text-align: left;
     font-weight: bold;
@@ -52,7 +54,22 @@ a:hover {
     text-align: left;
 }
 
-.jdates{
+.jdates {
     float: right;
     text-align: right;
+}
+
+/* Light Mode */
+body.light-mode,
+.light-mode * {
+    background-color: white !important;
+    color: black !important;
+}
+
+.light-mode a {
+    color: rgb(0, 0, 0) !important;
+}
+
+.light-mode a:hover {
+    color: rgb(0, 0, 0) !important;
 }

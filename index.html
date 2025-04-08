@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet"/>
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
     <title>Bernardo Dias</title>
 </head>
 <body>
+    <!-- Day/Night Toggle -->
+    <div class="container" style="text-align: right; padding: 1rem;">
+        <button id="mode-toggle" class="btn btn-secondary">Toggle Day/Night</button>
+    </div>
+
+    <!-- Intro -->
     <div class="container">
         <div id="introduction"></div>
     </div>
 
+    <!-- Main Sections -->
     <div class="container">
-        <!--Background-->
+        <!-- Background -->
         <div class="row mbox">
             <div class="title col-md-4">
                 <p class="title">Background</p>
@@ -22,7 +29,7 @@
             <div class="content col-md-8" id="background"></div>
         </div>
 
-        <!--Experience-->
+        <!-- Experience -->
         <div class="row mbox">
             <div class="title col-md-4">
                 <p class="title">Experience</p>
@@ -30,7 +37,7 @@
             <div class="content col-md-8" id="jobs"></div>
         </div>
 
-        <!--Education-->
+        <!-- Education -->
         <div class="row mbox">
             <div class="float-child col-md-4">
                 <p class="title">Education</p>
@@ -38,7 +45,7 @@
             <div class="content col-md-8" id="studies"></div>
         </div>
 
-        <!--Skills-->
+        <!-- Skills -->
         <div class="row mbox">
             <div class="title col-md-4">
                 <p class="title">Skills</p>
@@ -47,14 +54,25 @@
         </div>
     </div>
 
-    <!--Contacts-->
+    <!-- Contacts -->
     <div class="container">
         <div class="row">
-            <div class="col-md" style="text-align: center;"><p><a href="mailto:jbernardobvdias@gmail.com">Email</a></p></div>
-            <div class="col-md" style="text-align: center;"><p><a href="https://www.linkedin.com/in/jbbvd/">LinkedIn</a></p></div>
-            <div class="col-md" style="text-align: center;"><p><a href="https://github.com/jbernardobvdias">Github</a></p></div>
+            <div class="col-md text-center"><p><a href="mailto:jbernardobvdias@gmail.com">Email</a></p></div>
+            <div class="col-md text-center"><p><a href="https://www.linkedin.com/in/jbbvd/">LinkedIn</a></p></div>
+            <div class="col-md text-center"><p><a href="https://github.com/jbernardobvdias">Github</a></p></div>
         </div>
     </div>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById("mode-toggle");
+
+            toggleBtn.addEventListener("click", () => {
+                document.body.classList.toggle("light-mode");
+            });
+        });
+    </script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

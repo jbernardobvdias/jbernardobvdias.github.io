@@ -10,8 +10,8 @@ const data = {
         "Beyond my technical expertise, my international experiences have sharpened my adaptability and broadened my perspective, fueling my ability to collaborate effectively with teams from various cultural and professional backgrounds. I'm passionate about leveraging technology to make meaningful impacts while continuously expanding my knowledge in cutting-edge fields like AI and machine learning."
     ],
     "jobs": [
-        {"title": "Sales Representative - Savoy Signature", "dates": "Nov 2024 - Present"},
-        {"title": "Software Developer - Connecting Software", "dates": "Jan 2024 - Oct 2024"},
+        {"title": "Sales Representative - Savoy Signature", "dates": "Dec 2024 - Present"},
+        {"title": "Software Developer - Connecting Software", "dates": "Jan 2024 - Nov 2024"},
         {"title": "Data Scientist - Tracer", "dates": "Feb 2023 - Dec 2023"},
         {"title": "Research Intern - University of Nottingham", "dates": "Aug 2021 - Jan 2022"}
     ],
@@ -63,4 +63,3 @@ function loadData(data) {
 }
 
 loadData(data)
-
