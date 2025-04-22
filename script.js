@@ -15,15 +15,21 @@ const data = {
         {"title": "Data Scientist - Tracer", "dates": "Feb 2023 - Dec 2023"},
         {"title": "Research Intern - University of Nottingham", "dates": "Aug 2021 - Jan 2022"}
     ],
+    "projects": [
+        {"title": "Smart Notes", "link": "https://github.com/jbernardobvdias/Smart-Notes", "description": "LLM-powered note summarizer that turns long notes into concise summaries."},
+        {"title": "Productivity Tracker", "link": "https://github.com/jbernardobvdias/Productivity-Tracker", "description": "A desktop app that helps you monitor and improve your productivity over time."},
+        {"title": "Codeware", "link": "https://github.com/jbernardobvdias/Codeware-Main", "description": "A social media platform tailored for software engineering students — created for my Bachelor’s thesis."},
+        {"title": "Auto Curation System", "link": "https://github.com/jbernardobvdias/Auto-Curation-System", "description": "An application that uses AI to curate camera trap footage efficiently."}
+    ],
     "studies": [
         {"title": "(BE) Software Technology Engineering - VIA University College", "dates": "Aug 2019 - Jan 2023"},
         {"title": "Exchange Semester - University of Malta", "dates": "Feb 2022 - Jan 2023"}
     ],
     "skills": [
         {"title" : "Languages", "skills" : ["Python", "C#", "Go", "Java", "C", "SQL", "JavaScript", "Assembler"]},
-        //{"title" : "Development", "skills" : ["Web API Integration", "RESTful APIs", "Desktop Applications", "CI/CD", "Unit Testing", "Agile"]},
-        //{"title" : "AI", "skills" : ["PyTorch", "TensorFlow", "Computer Vision"]},
-        //{"title" : "DevOps", "skills" : ["Docker", "AWS", "GCP", "Azure"]}
+        // {"title" : "Development", "skills" : ["Web API Integration", "RESTful APIs", "Desktop Applications", "CI/CD", "Unit Testing", "Agile"]},
+        // {"title" : "AI", "skills" : ["PyTorch", "TensorFlow", "Computer Vision"]},
+        // {"title" : "Cloud", "skills" : ["Docker", "AWS", "GCP", "Azure"]}
     ]
 };
 
@@ -31,6 +37,7 @@ function loadData(data) {
     const IntroductionElement = document.getElementById("introduction");
     const BackgroundElement = document.getElementById("background");
     const JobsElement = document.getElementById("jobs");
+    const ProjectsElement = document.getElementById("projects");
     const StudiesElement = document.getElementById("studies");
     const SkillsElement = document.getElementById("skills")
     
@@ -47,13 +54,16 @@ function loadData(data) {
     }
     JobsElement.insertAdjacentHTML('beforeend', "<div class=\"job row col-md\"><p class=\"jname col-md\"><a href=\"assets/CV Bernardo Dias.pdf\">See my resume...</a></p></div>")
     
+    for (let i = 0; i < data.projects.length; i++) {
+        ProjectsElement.insertAdjacentHTML('beforeend', "<div><p><a href="+ data.projects[i].link +"> "+ data.projects[i].title +"</a></p><p>"+ data.projects[i].description +"</p></div>")
+    }
+
     for (let i = 0; i < data.studies.length; i++) {
         StudiesElement.insertAdjacentHTML('beforeend', "<div class=\"job row\"><p class=\"jname col-md-8\">" + data.studies[i].title + "</p><p class=\"jdates col-md-4\">" + data.studies[i].dates + "</p></div>");
     }
 
     for (let i = 0; i < data.skills.length; i++) {
-        SkillsElement.insertAdjacentHTML("beforeend", "<div class=\"row\">")
-        SkillsElement.insertAdjacentHTML("beforeend", "<p class=\"skill\"><b>" + data.skills[i].title + "</b></p>")
+        SkillsElement.insertAdjacentHTML("beforeend", "<div class=\"row\"><p class=\"skill\"><b>" + data.skills[i].title + "</b></p>")
         for (let j = 0; j < data.skills[i].skills.length; j++) {
             SkillsElement.insertAdjacentHTML("beforeend", "<p class=\"skill\">" + data.skills[i].skills[j] + "</p>")
         }
